@@ -30,7 +30,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (inputNumber > secretNumber) {
     if (score > 1) {
       score--;
-      document.querySelector(".message").textContent = "Input value too high";
+      document.querySelector(".message").textContent = "Too high";
       document.querySelector(".score").textContent = score;
     } else {
       document.querySelector(".score").textContent = 0;
@@ -41,7 +41,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (inputNumber < secretNumber) {
     if (score > 1) {
       score--;
-      document.querySelector(".message").textContent = "Input value too low";
+      document.querySelector(".message").textContent = "Too low";
       document.querySelector(".score").textContent = score;
     } else {
       document.querySelector(".score").textContent = 0;
